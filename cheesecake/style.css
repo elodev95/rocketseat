@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Source Serif 4", serif;
+}
+
+body {
+  background-color: #fbf3e2;
+  padding: 5.4rem 3.7rem;
+  color: #A54328;
+  font-size: clamp(1.4rem, 1vw + 0.4rem, 1.8rem);
+  line-height: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+}
+
+main {
+  max-width: 32rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4.0rem;
+  box-sizing: content-box;
+}
+
+img {
+  max-width: 30rem;
+  margin: 4.6rem 0;
+}
+
+h1, h2 {
+  font-size: clamp(2.8rem, 2vw + 1rem, 4rem);
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+button {
+  background-color: #A54328;
+  border: 0;
+  border-radius: 0.7rem;
+  padding: 0.9rem 1.1rem;
+  font-family: "Source Serif 4", serif;
+  color: white;
+  font-size: 1.0rem;
+  margin-top: 1.7rem;
+}
+
+ul, ol {
+  padding-left: 2.4rem;
+}
+
+ul {
+  margin-bottom: 1.4rem;
+}
+
+@media (min-width: 1120px) {
+
+  body {
+    padding-top: 8rem;
+    background: url(./images/bg-paper.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  main {
+    max-width: fit-content;
+    flex-direction: row;
+    gap: 11.6rem;
+  }
+
+  .recipe {
+    max-width: 43.5rem;
+  }
+
+  .recipe-prep {
+    max-width: 52.5rem;
+  }
+
+  img {
+    max-width: 41.1rem;
+  }
+
+  button {
+    margin-top: 2.4rem;
+    font-size: 1.4rem;
+    padding: 1rem 1.6rem;
+  }
+}
